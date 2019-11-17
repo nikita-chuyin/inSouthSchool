@@ -1,0 +1,1 @@
+<view><button open-type="getUserInfo"></button></view>
