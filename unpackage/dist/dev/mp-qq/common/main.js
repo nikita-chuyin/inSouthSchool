@@ -101,7 +101,11 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   },
   onHide: function onHide() {
     console.log('App Hide');
-  } };exports.default = _default;
+  },
+  globalData: {
+    userInfo: null,
+    host: "http://127.0.0.1:8000/",
+    apiVersion: "v1.0/" } };exports.default = _default;
 
 /***/ }),
 /* 12 */

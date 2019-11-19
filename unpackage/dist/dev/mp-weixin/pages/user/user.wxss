@@ -1,0 +1,43 @@
+
+.blueBackground{
+	height: 450rpx;
+	width: 100%;
+	background-color: #78acff;
+}
+.avatar{
+	background-image: url("https://thirdqq.qlogo.cn/qqapp/1110027966/AB191ACFA7209F10E101AB096C0DEA84/100");
+	/* background-repeat: repeat; */
+	width: 190rpx;
+	height: 190rpx;
+	border-radius: 50%;
+	-webkit-box-shadow: 0rpx 0rpx 6rpx 8rpx rgb(255, 255, 255);
+	        box-shadow: 0rpx 0rpx 6rpx 8rpx rgb(255, 255, 255);
+}
+.avatarPosition{
+	float: right;
+	top: 50%;
+	right: 5%;
+}
+.nickNamePosition{
+	position: absolute;
+	top: 50%;
+	left: 5%;
+}
+.big-white-bold{
+	font-size: 60rpx;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+.statusPosition{
+	position: absolute;
+	bottom: 25%;
+	left: 5%;
+}
+.small-white-bold{
+	font-size: 24rpx;
+	color: #FFFFFF;
+}
+.main{
+	margin: 0 5% 0 5%;
+}
+
