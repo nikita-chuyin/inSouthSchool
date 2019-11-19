@@ -12,17 +12,11 @@
 		<view class="main">
 			<!-- 九宫格部分 -->
 			<view class="co-grid">
-				<view class="grid">
-					<image src="../../static/collection.png" class="grid-image" mode=""></image>
-					<text class="grid-text">我的收藏</text>
-				</view>
-				<view class="grid">
-					<image src="../../static/workorder.png" class="grid-image" mode=""></image>
-					<text class="grid-text">我的工单</text>
-				</view>
-				<view class="grid">
-					<image src="../../static/collection.png" class="grid-image" mode=""></image>
-					<text class="grid-text">我的收藏</text>
+				<view :class="items.status? 'grid-click' : 'grid'" v-for="(items, index) in pageList" :key="index" @touchstart="gridClick(items, index)" @touchend="gridEndClick(items, index)">
+					<view class="co-image">
+						<image :src="items.src" class="grid-image" mode=""></image>
+					</view>
+					<text class="grid-text">{{items.text}}</text>
 				</view>
 			</view>
 		</view>
@@ -34,13 +28,45 @@
 	export default {
 		data() {
 			return {
-				
+				pageList: [{
+					text: "我的收藏",
+					src: "../../static/workorder.png",
+					status: false
+				},
+				{
+					text: "我的工单",
+					src: "../../static/workorder.png",
+					status: false
+				},
+				{
+					text: "我的约伴",
+					src: "../../static/friends.png",
+					status: false
+				}]
 			}
 		},
 		onLoad() {
 		
 		},
-		methods: {			
+		methods: {
+			// 用户松开点击
+			gridEndClick(items, index){
+				// 按钮变回白色
+				var that = this
+				var pageList = that.pageList
+				pageList[index].status = false
+				that.pageList = pageList
+				// 页面跳转
+				
+			},
+			// 用户点击态
+			gridClick(items, index){
+				// 按钮灰变色
+				var that = this
+				var pageList = that.pageList
+				pageList[index].status = true
+				that.pageList = pageList
+			},
 			// 获取用户信息
 			onGotUserInfo(e) {
 			    console.log(e.detail.userInfo)
@@ -67,29 +93,58 @@
 
 <style>
 .co-grid{
+	margin-top: 20rpx;
+	border-radius: 20.25rpx;
 	width: 100%;
-	height: 180rpx;
+	height: 160rpx;
+	background-color: #FFFFFF;
+}
+
+.co-image{
+	/* width: 100rpx; */
+	height: 100rpx;
 }
 
 .grid{
 	width: calc(100% / 3);
-	height: 100%;
+	margin: 10rpx auto;
+	height: 90%;
 	display: inline-block;
-	background-color: #007AFF;
+	border-right-style: dashed;
+	border-right-color: #bfbdb6;
+	border-right-width: 1rpx;
+}
+
+.grid-click{
+	width: calc(100% / 3);
+	margin: 10rpx auto;
+	height: 90%;
+	display: inline-block;
+	border-right-style: dashed;
+	border-right-color: #bfbdb6;
+	border-right-width: 1rpx;
+	background-color: #EEEEEE;
+}
+
+.grid:nth-child(3n+3){
+	border-right-color: #FFFFFF;
 }
 
 .grid-text{
 	display: block;
 	text-align: center;
-	/* background-color: #007AFF; */
-	line-height: 130rpx;
-	font-size: 30rpx;
+	/* background-color: #8DC63F; */
+	line-height: 10rpx;
+	font-size: 28rpx;
+	font-weight: 500;
 }
 
 .grid-image{
+	/* position: absolute; */
 	display: block;
-	width: 50rpx;
-	height: 50rpx;
+	margin: 15rpx auto;
+	width: 60rpx;
+	height: 60rpx;
 }
 
 .blueBackground{
@@ -100,7 +155,6 @@
 
 .avatar{
 	background-image: url("https://thirdqq.qlogo.cn/qqapp/1110027966/AB191ACFA7209F10E101AB096C0DEA84/100");
-	/* background-repeat: repeat; */
 	width: 190rpx;
 	height: 190rpx;
 	border-radius: 50%;
