@@ -1,6 +1,41 @@
 
+.co-list{
+	margin-top: 40rpx;
+	width: 100%;
+	background-color: #FFFFFF;
+	border-radius: 20.25rpx;
+}
+.list{
+	position: relative;
+	width: 90%;
+	height: 100rpx;
+	margin: 0 5%;
+	border-bottom: 1.5rpx solid #EEEEEE;
+}
+.list-icon{
+	display: inline-block;
+	width: 40rpx;
+	height: 40rpx;
+	margin: 30rpx 0;
+}
+.list-text{
+	display: inline-block;
+	position: absolute;
+	left: 70rpx;
+	font-size: 32rpx;
+	line-height: 100rpx;
+	font-weight: 400;
+}
+.list-in{
+	display: inline-block;
+	position: absolute;
+	right: 30rpx;
+	font-size: 32rpx;
+	line-height: 100rpx;
+	font-weight: 400;
+}
 .co-grid{
-	margin-top: 20rpx;
+	margin-top: 30rpx;
 	border-radius: 20.25rpx;
 	width: 100%;
 	height: 160rpx;

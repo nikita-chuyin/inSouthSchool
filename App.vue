@@ -2,6 +2,39 @@
 	export default {
 		onLaunch: function() {
 			console.log('App Launch')
+			uni.getSetting({
+			   success(res) {
+			      console.log(res.authSetting["scope.userInfo"])
+				  if(!res.authSetting["scope.userInfo"]){
+					  uni.authorize({
+					  	scope: "scope.userInfo",
+						success() {
+							uni.getUserInfo({
+								success(e) {
+									console.log(e)
+									this.globalData.userInfo = e.userInfo
+									uni.login({
+										success(result) {
+											uni.request({
+												url: this.globalData.host + this.globalData.apiVersion + "auth/qq_login",
+												method: "POST",
+												data: {
+													code: result.code,
+													userInfo: this.globalData.userInfo
+												},
+												success(r){
+													console.log(r)
+												}
+											})
+										}
+									})
+								}
+							})
+						}
+					  })
+				  }
+			   }
+			})
 		},
 		onShow: function() {
 			console.log('App Show')
