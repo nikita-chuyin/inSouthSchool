@@ -1,0 +1,1 @@
+<view class="main"><view class="co-title"><text class="title">关于在南华</text></view><view></view></view>

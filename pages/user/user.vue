@@ -3,10 +3,14 @@
 		<!-- avatar、nickName部分 -->
 		<view class="blueBackground" style="position: relative;">
 			<view class="nickNamePosition big-white-bold">
-				theBest
+				{{userInfo? userInfo.nickName : "未授权"}}
 			</view>
-			<view class="statusPosition small-white-bold">(身份未认证)</view>
-			<button open-type="getUserInfo" @getuserinfo="onGotUserInfo" class="avatar avatarPosition"></button>
+			<view class="statusPosition small-white-bold" v-if="userInfo">(身份未认证)</view>
+			<view class="avatarPosition" v-if="userInfo">
+				<image :src="userInfo.avatarUrl" mode="" class="avatar-image"></image>
+				<button open-type="getUserInfo" @getuserinfo="onGotUserInfo" class="avatar-button"></button>
+			</view>
+			<button open-type="getUserInfo" @getuserinfo="onGotUserInfo" class="avatar-button avatarPosition unAuth" v-if="!userInfo">{{tip}}</button>
 		</view>
 		<!-- main部分 -->
 		<view class="main">
@@ -22,6 +26,7 @@
 			<!-- 页面列表部分 -->
 			<view class="co-list">
 				<view class="list" v-for="(items, index) in pageList" :key="index" @click="listClick(items, index)">
+					<button class="list-button" :open-type="items.openType" hover-class="none"></button>
 					<!-- 这里被icon组件被colorUI覆盖，直接上图片 -->
 					<image class="list-icon" :src="items.src" mode=""></image>
 					<text class="list-text">{{items.text}}</text>
@@ -54,19 +59,31 @@
 				}],
 				pageList: [{
 					text: "身份认证",
-					src: "/static/auth.png"
+					src: "/static/auth.png",
+					openType: "",
 				},
 				{
 					text: "关于我们",
-					src: "/static/about.png"
+					src: "/static/about.png",
+					openType: ""
 				},{
 					text: "推荐给好友",
-					src: "/static/share.png"
-				}]
+					src: "/static/share.png",
+					openType: "share"
+				}],
+				userInfo: null,
+				tip: "点击授权",
 			}
 		},
+		onShow() {
+			console.log("onshow")
+		},
 		onLoad() {
-		
+			console.log("onload")
+			// this.getUserInfoBySetting()
+			if(app.globalData.userInfo){
+				this.userInfo = app.globalData.userInfo
+			}
 		},
 		methods: {
 			/*列表点击事件*/
@@ -95,8 +112,10 @@
 			},
 			// 获取用户信息
 			onGotUserInfo(e) {
+				var that = this
 			    console.log(e.detail.userInfo)
 			    app.globalData.userInfo = e.detail.userInfo
+				that.userInfo = app.globalData.userInfo
 			    uni.login({
 			      success(res){
 			        uni.request({
@@ -108,16 +127,22 @@
 			          },
 			          success(result){
 			            console.log(result)
+						// console.log(that)
 			          }
 			        })
 			      }
 			    })
-			  }
+			}
 		}
 	}
 </script>
 
 <style>
+.list-button{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
 .co-list{
 	margin-top: 40rpx;
 	width: 100%;
@@ -132,20 +157,24 @@
 	border-bottom: 1.5rpx solid #EEEEEE;
 }
 .list-icon{
+	position: absolute;
+	left: 0;
+	z-index: 1;
 	display: inline-block;
 	width: 40rpx;
 	height: 40rpx;
 	margin: 30rpx 0;
 }
 .list-text{
+	z-index: 1;
 	display: inline-block;
 	position: absolute;
 	left: 70rpx;
 	font-size: 32rpx;
 	line-height: 100rpx;
-	font-weight: 400;
 }
 .list-in{
+	z-index: 1;
 	display: inline-block;
 	position: absolute;
 	right: 30rpx;
@@ -201,23 +230,33 @@
 	width: 60rpx;
 	height: 60rpx;
 }
-
 .blueBackground{
 	height: 450rpx;
 	width: 100%;
 	background-color: #78acff;
 }
-.avatar{
-	background-image: url("https://thirdqq.qlogo.cn/qqapp/1110027966/AB191ACFA7209F10E101AB096C0DEA84/100");
-	width: 190rpx;
+.avatar-button{
 	height: 190rpx;
+	width: 190rpx;
 	border-radius: 50%;
 	box-shadow: 0rpx 0rpx 6rpx 8rpx rgb(255, 255, 255);
 }
+.avatar-image{
+	width: 190rpx;
+	height: 190rpx;
+	position: absolute;
+	z-index: 1;
+	border-radius: 50%;
+}
 .avatarPosition{
-	float: right;
+	position: absolute;
 	top: 50%;
 	right: 5%;
+}
+.unAuth{
+	line-height: 190rpx;
+	font-size: 30rpx;
+	margin: 0 auto;
 }
 .nickNamePosition{
 	position: absolute;
@@ -225,7 +264,7 @@
 	left: 5%;
 }
 .big-white-bold{
-	font-size: 60rpx;
+	font-size: 50rpx;
 	font-weight: 700;
 	color: #FFFFFF;
 }

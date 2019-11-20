@@ -3,7 +3,12 @@
     "pages/index/index",
     "pages/fangle/fangle",
     "pages/treasure/treasure",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/about/about",
+    "pages/authentication/authentication",
+    "pages/myCollection/myCollection",
+    "pages/myWorkOrder/myWorkOrder",
+    "pages/myFriends/myFriends"
   ],
   "window": {
     "navigationBarTextStyle": "white",
