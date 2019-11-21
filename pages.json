@@ -1,6 +1,14 @@
 {
 	"pages": [
 		{
+		    "path" : "pages/authentication/authentication",
+		    "style" : {
+		    	"navigationBarTitleText":"教务在线登陆验证",
+				"navigationStyle": "custom"
+		    }
+		}
+		,
+		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "课程表"
@@ -31,12 +39,6 @@
 	    	}
 	    },
         {
-            "path" : "pages/authentication/authentication",
-            "style" : {
-            	"navigationBarTitleText":"教务在线登陆验证"
-            }
-        }
-        ,{
             "path" : "pages/myCollection/myCollection",
             "style" : {}
         }

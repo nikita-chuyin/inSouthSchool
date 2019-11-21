@@ -92,23 +92,24 @@
 				
 			},
 			/*九宫格点击事件*/
+			// 按钮变色
+			changeColor(bool, items, index){
+				var that = this
+				var gridList = that.gridList
+				gridList[index].status = bool
+				that.gridList = gridList
+			},
 			// 用户松开点击
 			gridEndClick(items, index){
 				// 按钮变回白色
-				var that = this
-				var gridList = that.gridList
-				gridList[index].status = false
-				that.gridList = gridList
+				this.changeColor(false, items, index)
 				// 页面跳转
 				
 			},
 			// 用户点击态
 			gridClick(items, index){
 				// 按钮灰变色
-				var that = this
-				var gridList = that.gridList
-				gridList[index].status = true
-				that.gridList = gridList
+				this.changeColor(true, items, index)
 			},
 			// 获取用户信息
 			onGotUserInfo(e) {

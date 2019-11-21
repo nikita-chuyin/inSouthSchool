@@ -1,4 +1,5 @@
 {
   "navigationBarTitleText": "教务在线登陆验证",
+  "navigationStyle": "custom",
   "usingComponents": {}
 }
