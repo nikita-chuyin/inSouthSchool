@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "login-module": "/pages/template/loginModule"
+  }
+}

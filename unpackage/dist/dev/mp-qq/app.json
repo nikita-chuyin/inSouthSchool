@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/authentication/authentication",
     "pages/treasure/lostThing/lostThing",
     "pages/treasure/cetQuery/cetQuery",
     "pages/treasure/cetScore/cetScore",
@@ -16,7 +17,6 @@
     "pages/myCollection/myCollection",
     "pages/myWorkOrder/myWorkOrder",
     "pages/myFriends/myFriends",
-    "pages/authentication/authentication",
     "pages/treasure/scoreSystem/scoreLogin/scoreLogin"
   ],
   "window": {
