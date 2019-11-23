@@ -1,0 +1,138 @@
+@import './icon.css';
+/* 自定义导航部分的样式 */
+ .navigation_grounp {
+ 	position: flexed;
+ 	top: 0;
+ 	width: 100%;
+ }
+
+ .navigation_grounp>.navigation {
+ 	display: flex;
+ 	align-items: flex-end;
+ 	box-sizing: border-box;
+ 	padding-bottom: 10px;
+ 	padding-left: 15px;
+ 	background-color: green;
+ 	height: 55px;
+ 	color: white;
+ }
+
+ .navigation .nav_search {
+ 	overflow: hidden;
+ }
+
+ .navigation .nav_title {
+ 	padding-left: 33%;
+ 	;
+ 	text-align: center;
+ 	overflow: hidden;
+ 	white-space: nowrap;
+ }
+
+ .input_hidden {
+ 	border-bottom: 1px solid white;
+ 	display: none;
+ 	color: white;
+ 	font-size: 16px;
+ }
+
+/*  */
+ .whole_box {
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ }
+
+ .whole_box .container {
+ 	text-align: center;
+ 	width: 90%;
+ 	height: 97px;
+ 	background: #4CD964;
+ 	color: white;
+ 	font-size: 12px;
+ 	border-radius: 8px;
+ 	margin-top: 18px;
+ }
+
+ .container .bigText {
+ 	display: block;
+ 	margin-top: 20px;
+ 	font-weight: 800;
+ 	font-size: 25px;
+ }
+
+
+/* scoreSystem部分 */
+.sWhole_box  .login_box{
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.login_box image{
+	width: 95px;
+	height: 95px;
+}
+.sWhole_box .score_container{
+	padding: 3px 15px;
+	height: 39px;
+	line-height: 32px;
+	margin-bottom: 2px;
+	background: white;
+	font-size: 12px;
+	display: flex;
+	vertical-align: bottom;
+}
+.score_container input{
+	margin-left: 35px;
+	margin-top: 4px;
+}
+.sWhole_box .btn_type{
+	margin-top: 23px;
+	width: 120px;
+	background: #0081FF;
+	color: white;
+	border-radius: 5px;
+}
+
+
+/* 输入框样式 */
+.sWhole_box  .login_box{
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.login_box image{
+	width: 95px;
+	height: 95px;
+}
+.sWhole_box .score_container{
+	padding: 3px 15px;
+	height: 39px;
+	line-height: 32px;
+	margin-bottom: 2px;
+	background: white;
+	font-size: 12px;
+	display: flex;
+	vertical-align: bottom;
+}
+.score_container input{
+	margin-left: 35px;
+	margin-top: 4px;
+}
+.sWhole_box .btn_type{
+	margin-top: 23px;
+	width: 120px;
+	background: #0081FF;
+	color: white;
+	border-radius: 5px;
+}

@@ -1,9 +1,14 @@
 {
   "pages": [
+    "pages/authentication/authentication",
     "pages/index/index",
     "pages/fangle/fangle",
     "pages/treasure/treasure",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/about/about",
+    "pages/myCollection/myCollection",
+    "pages/myWorkOrder/myWorkOrder",
+    "pages/myFriends/myFriends"
   ],
   "subPackages": [],
   "window": {
@@ -44,5 +49,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

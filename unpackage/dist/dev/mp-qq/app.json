@@ -1,14 +1,23 @@
 {
   "pages": [
-    "pages/authentication/authentication",
-    "pages/index/index",
-    "pages/fangle/fangle",
+    "pages/treasure/lostThing/lostThing",
+    "pages/treasure/cetQuery/cetQuery",
+    "pages/treasure/cetScore/cetScore",
+    "pages/treasure/reviewLesson/reviewLesson",
+    "pages/treasure/scoreSystem/scoreSystem",
     "pages/treasure/treasure",
+    "pages/fangle/fangle",
+    "pages/index/index",
+    "pages/treasure/library/library",
+    "pages/treasure/bookSearch/bookSearch",
+    "pages/treasure/loginLibrary/loginLibrary",
     "pages/user/user",
     "pages/about/about",
     "pages/myCollection/myCollection",
     "pages/myWorkOrder/myWorkOrder",
-    "pages/myFriends/myFriends"
+    "pages/myFriends/myFriends",
+    "pages/authentication/authentication",
+    "pages/treasure/scoreSystem/scoreLogin/scoreLogin"
   ],
   "window": {
     "navigationBarTextStyle": "white",

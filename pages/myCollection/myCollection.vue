@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		collection
 	</view>
 </template>
 

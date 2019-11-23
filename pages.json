@@ -6,8 +6,48 @@
 		    	"navigationBarTitleText":"教务在线登陆验证",
 				"navigationStyle": "custom"
 		    }
-		}
-		,
+		},
+		{
+		    "path" : "pages/treasure/lostThing/lostThing",
+		    "style" : {
+				"navigationBarTitleText":"失物招领"
+			}
+		},
+		{
+		    "path" : "pages/treasure/cetQuery/cetQuery",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/treasure/cetScore/cetScore",
+		    "style" : {
+				"navigationBarTitleText":"四六级成绩"
+			}
+		},
+		{
+		    "path" : "pages/treasure/reviewLesson/reviewLesson",
+		    "style" : {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor":"#1ABD6C"
+			}
+		},
+		{
+		    "path" : "pages/treasure/scoreSystem/scoreSystem",
+		    "style" : {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/treasure/treasure",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/fangle/fangle",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -15,15 +55,21 @@
 			}
 		},
 		{
-			"path": "pages/fangle/fangle",
-			"style": {
-				"navigationBarTitleText": "在南华"
+		    "path" : "pages/treasure/library/library",
+		    "style" : {
+				"navigationBarTitleText":""
 			}
 		},
 		{
-			"path": "pages/treasure/treasure",
-			"style": {
-				"navigationBarTitleText": "工具箱"
+		    "path" : "pages/treasure/bookSearch/bookSearch",
+		    "style" : {
+				"navigationBarTitleText":""
+			}
+		},
+		{
+		    "path" : "pages/treasure/loginLibrary/loginLibrary",
+		    "style" : {
+				"navigationBarTitleText":""
 			}
 		},
 		{
@@ -31,23 +77,22 @@
 			"style": {
 				"navigationStyle": "custom"
 			}
-		},
-	    {
+		},{
 	        "path" : "pages/about/about",
 	        "style" : {
 	    		"navigationBarTitleText":"关于"
 	    	}
-	    },
-        {
+	    },{
             "path" : "pages/myCollection/myCollection",
             "style" : {}
-        }
-        ,{
+        },{
             "path" : "pages/myWorkOrder/myWorkOrder",
             "style" : {}
-        }
-        ,{
+        },{
             "path" : "pages/myFriends/myFriends",
+            "style" : {}
+        },{
+            "path" : "pages/treasure/scoreSystem/scoreLogin/scoreLogin",
             "style" : {}
         }
     ],

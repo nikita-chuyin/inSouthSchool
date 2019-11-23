@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		friends
 	</view>
 </template>
 
