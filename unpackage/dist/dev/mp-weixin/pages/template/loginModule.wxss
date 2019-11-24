@@ -1,0 +1,49 @@
+
+.sWhole_box  .login_box.data-v-5fef5f54{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	text-align: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.login_box image.data-v-5fef5f54{
+	width: 95px;
+	height: 95px;
+}
+.sWhole_box .score_container.data-v-5fef5f54{
+	padding: 3px 15px;
+	height: 39px;
+	line-height: 32px;
+	margin-bottom: 2px;
+	background: white;
+	font-size: 12px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	vertical-align: bottom;
+}
+.score_container input.data-v-5fef5f54{
+	margin-left: 35px;
+	margin-top: 4px;
+}
+.sWhole_box .btn_type.data-v-5fef5f54{
+	margin-top: 23px;
+	width: 120px;
+	background: #0081FF;
+	color: white;
+	border-radius: 5px;
+}
+

@@ -1,0 +1,10 @@
+
+.lost_navigate{
+	background: #78ACFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	color:white;
+}
+

@@ -1,0 +1,1 @@
+<view><view class="lost_navigate"><view class="report_lost">报失</view><view class="report_find">招领</view><button size="mini" data-event-opts="{{[['tap',[['lostPublish',['$event']]]]]}}" bindtap="__e">发布</button></view></view>
