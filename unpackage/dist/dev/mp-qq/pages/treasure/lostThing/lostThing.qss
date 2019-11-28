@@ -1,0 +1,23 @@
+
+.lost_navigate {
+	background: #78ACFF;
+	color: white;
+	font-size: 16px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+.lost_text{
+	padding: 0 8px;
+}
+.active {
+	border-bottom: 2px solid white;
+}
+swiper{
+	height: 600px;
+}
+

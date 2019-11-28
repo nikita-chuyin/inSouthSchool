@@ -1,0 +1,1 @@
+<view><view class="lost_thing_box"><view class="lost_above">{{lostName}}</view><view class="lost_below"><text class="iconfont icon-nickname"></text>{{''+lostOwner+''}}<text class="iconfont icon-icon-test5"></text>{{''+lostTime+''}}</view></view></view>

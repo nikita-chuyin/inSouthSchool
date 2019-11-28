@@ -1,0 +1,1 @@
+<view><login-module vue-id="1" loginTitle="{{loginTitle}}" btnText="{{checkResult}}" bind:__l="__l" vue-slots="{{['default']}}"><wyj-text-code vue-id="{{('2')+','+('1')}}" bind:__l="__l"></wyj-text-code></login-module></view>

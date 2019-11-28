@@ -1,0 +1,17 @@
+
+.whole_container {
+	padding: 24px;
+	color: white;
+}
+.school_picture {
+	width: 100%;
+	height: 250px;
+	text-align: center;
+	line-height: 250px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	background: #555555;
+}
+
+

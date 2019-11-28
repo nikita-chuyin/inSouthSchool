@@ -1,0 +1,1 @@
+<view><view class="book_shell"><image src="../../../static/book.png"></image><text>图书馆馆藏书籍搜索</text></view><view class="book_search"><input type="text" placeholder="请输入图书信息..."/><button data-event-opts="{{[['tap',[['bookSearch',['$event']]]]]}}" class="btn_type" bindtap="__e"><text class="iconfont icon-icon-test4"></text></button></view></view>

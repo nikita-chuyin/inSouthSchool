@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "失物招领",
+  "usingComponents": {
+    "lost-thing": "/pages/template/lostThingModal"
+  }
+}

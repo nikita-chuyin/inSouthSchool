@@ -1,0 +1,1 @@
+<view class="sWhole_box"><block wx:for="{{phoneType}}" wx:for-item="item" wx:for-index="i"><view data-event-opts="{{[['tap',[['phoneTypeDetail',[i]]]]]}}" class="score_container detail_type" bindtap="__e"><text>{{item}}</text></view></block></view>

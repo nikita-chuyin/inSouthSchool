@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/authentication/authentication",
+    "pages/treasure/treasure",
+    "pages/treasure/lostThing/lostThing",
+    "pages/treasure/lostThing/lostPublish/lostPublish",
+    "pages/fangle/fangle",
+    "pages/treasure/cetQuery/cetQuery",
+    "pages/treasure/cetScore/cetScore",
+    "pages/treasure/reviewLesson/reviewLesson",
+    "pages/treasure/scoreSystem/scoreSystem",
+    "pages/treasure/honestyUmbrella/honestyUmbrella",
+    "pages/index/index",
+    "pages/treasure/library/library",
+    "pages/treasure/bookSearch/bookSearch",
+    "pages/treasure/repair/repair",
+    "pages/treasure/loginLibrary/loginLibrary",
+    "pages/treasure/phoneList/phoneDetail2/phoneDetail2",
+    "pages/treasure/phoneList/phoneDetail3/phoneDetail3",
+    "pages/treasure/phoneList/phoneDetail4/phoneDetail4",
+    "pages/treasure/phoneList/phoneDetail5/phoneDetail5",
+    "pages/treasure/phoneList/phoneDetail6/phoneDetail6",
+    "pages/treasure/phoneList/phoneDetail1/phoneDetail1",
+    "pages/user/user",
+    "pages/about/about",
+    "pages/myCollection/myCollection",
+    "pages/myWorkOrder/myWorkOrder",
+    "pages/myFriends/myFriends",
+    "pages/treasure/scoreSystem/scoreLogin/scoreLogin",
+    "pages/treasure/schoolWiFi/schoolWiFi",
+    "pages/treasure/schoolMap/schoolMap",
+    "pages/treasure/phoneList/phoneList",
+    "pages/treasure/schoolProgram/schoolProgram",
+    "pages/treasure/schoolPicture/schoolPicture",
+    "pages/treasure/scoreSystem/queryByscore/queryByscore",
+    "pages/treasure/scoreSystem/seatOrder/seatOrder",
+    "pages/treasure/scoreSystem/carrerTest/carrerTest"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#78acff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#2c2c2c",
+    "borderStyle": "white",
+    "backgroundColor": "#edf0f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/timetable.png",
+        "selectedIconPath": "static/timetable_click.png",
+        "text": "课程表"
+      },
+      {
+        "pagePath": "pages/fangle/fangle",
+        "iconPath": "static/fangle.png",
+        "selectedIconPath": "static/fangle_click.png",
+        "text": "新鲜事"
+      },
+      {
+        "pagePath": "pages/treasure/treasure",
+        "iconPath": "static/treasure.png",
+        "selectedIconPath": "static/treasure_click.png",
+        "text": "百宝箱"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/user.png",
+        "selectedIconPath": "static/user_click.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

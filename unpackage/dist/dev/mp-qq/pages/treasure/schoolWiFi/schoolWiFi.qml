@@ -1,0 +1,1 @@
+<view><login-module vue-id="1" loginTitle="{{loginTitle}}" imageSrc="{{imageSrc}}" bind:__l="__l"></login-module></view>
